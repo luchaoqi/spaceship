@@ -1,0 +1,20 @@
+tmp
+
+# Others
+.vscode
+env
+**/.git
+
+
+# R
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+.RDataTmp*
+
+# Python
+__pycache__
+.pytest_cache
+.ipynb_checkpoints
+.idea
