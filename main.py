@@ -14,16 +14,21 @@ class game:
 
     def draw_window(self):
         # draw window
-        curses.initscr()
-        curses.curs_set(0)
-        curses.initscr()
-        curses.noecho()
-        curses.curs_set(False)
-        win = curses.newwin(self.nlines,self.ncols + 40,self.begin_y,self.begin_x) # + 40: space for printing the score
-        win.keypad(True)
-        win.nodelay(1)
-        win.refresh()
-        return win
+        try:
+            curses.initscr()
+            curses.curs_set(0)
+            curses.initscr()
+            curses.noecho()
+            curses.curs_set(False)
+            win = curses.newwin(self.nlines,self.ncols + 40,self.begin_y,self.begin_x) # + 40: space for printing the score
+            win.keypad(True)
+            win.nodelay(1)
+            win.refresh()
+            return win
+        except:
+            print('Screen initialization failed, please adjust the size of canvas or the size of terminal and try again.')
+            return
+            # raise
 
     def game_init(self):
         # basic information initialization: score, position of ship, obstacles
@@ -40,9 +45,8 @@ def main(nlines=10,ncols=30,begin_y=0,begin_x=0,difficulty=1):  # sourcery no-me
         score,ship,obstacles = tmp.game_init()
         win.addstr(ship[0],ship[1], '*')
     except:
-        print('Initialization failed')
-        raise
-
+        return
+        
     # game running
     difficulty_levels = [[20,0.5],[10,0.3],[5,0.2]] # number of obstables per line, obstable speed
     obstacle_n,obstacle_speed = difficulty_levels[difficulty]
@@ -101,13 +105,13 @@ if __name__ == '__main__':
     Args:
         nlines (int, optional): [height of canvas]. Defaults to 10.
         ncols (int, optional): [width of canvas]. Defaults to 30.
-        difficulty (int, optional): [difficulty level]. Defaults to 1.
+        difficulty (int, optional): [difficulty level]. Choices = [0,1,2]. Defaults to 1 .
     """
 
     parser = argparse.ArgumentParser(description="Play the spaceship dodging game in terminal")
     parser.add_argument("--canvas_height", nargs='?', default=10, type=int, help="height of canvas")
     parser.add_argument("--canvas_width", nargs='?', default=30, type=int,help="width of canvas")
-    parser.add_argument("--diff_level", nargs='?', default=1, type=int, help="difficulty level")
+    parser.add_argument("--diff_level", nargs='?', default=1, type=int, choices=[0,1,2], help="difficulty level")
 
     args = parser.parse_args()
     main(nlines=args.canvas_height,ncols=args.canvas_width,difficulty=args.diff_level)
