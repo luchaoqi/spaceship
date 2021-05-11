@@ -2,18 +2,6 @@ import os
 # Left arrow is 68, right arrow is 67, space is 32
 import getch
 
-# Terminal Invaders
-#
-# A terminal-based clone of Space Invaders.
-#  Eric Matthes
-#  @ehmatthes
-
-# This version is meant to use only lists, if statements, while loops
-#  No classes, dictionaries, etc.
-
-
-### PARAMETERS ###
-
 # What the ship looks like.
 ship_string = '|-/\-|'
 
