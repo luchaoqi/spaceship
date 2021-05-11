@@ -2,10 +2,6 @@ Python-based spaceship dodging game in terminal using curses (windows-curses), n
 
 
 
-
-
-
-
 ```bash
 # unit test for windows
 conda env create -f environment_win.yml -n spaceship # env name
