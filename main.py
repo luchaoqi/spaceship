@@ -79,7 +79,7 @@ if __name__ == '__main__':
     parser.add_argument("--canvas_width", nargs='?', default=30, type=int,help="width of canvas")
     parser.add_argument("--begin_y", nargs='?', default=0, type=int,help="position of upper margin of canvas")
     parser.add_argument("--begin_x", nargs='?', default=0, type=int,help="position of left margin of canvas")
-    parser.add_argument("--diff_level", nargs='?', default=1, type=int, choices=[0,1,2], help="difficulty level: control the number of obstacles/move speed")
+    parser.add_argument("--diff_level", nargs='?', default=1, type=int, choices=[0,1,2], help="difficulty level: control the number of obstacles/move speed. Choices = [0,1,2]. Defaults to 2")
     args = parser.parse_args()
 
     main(nlines=args.canvas_height,ncols=args.canvas_width,difficulty=args.diff_level)
