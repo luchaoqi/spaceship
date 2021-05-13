@@ -12,9 +12,9 @@ conda activate spaceship
 python test.py --canvas_height 30 --canvas_width 30 --diff_level 2
 ```
 
-demo
+[youtube link to demo](https://youtu.be/x4g7NjKTjqw)
 
-<iframe width="857" height="565" src="https://www.youtube.com/embed/x4g7NjKTjqw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+[![](http://img.youtube.com/vi/x4g7NjKTjqw/0.jpg)](http://www.youtube.com/watch?v=x4g7NjKTjqw "")
 
 ### Windows
 
@@ -28,5 +28,5 @@ python test.py --canvas_height 30 --canvas_width 30 --diff_level 2
 
 demo
 
-![](https://i.loli.net/2021/05/14/i3oxKlQY9mcg74s.gif)
+![](https://raw.githubusercontent.com/LuchaoQi/Spaceship/master/demo/demo_win.gif)
 
