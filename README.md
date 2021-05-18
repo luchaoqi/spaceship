@@ -19,7 +19,7 @@ python test.py --canvas_height 30 --canvas_width 30 --diff_level 2
 
 
 <div class="iframe_container">
-  <iframe width="560" height="315" src="http://www.youtube.com/embed/x4g7NjKTjqw" frameborder="0" allowfullscreen></iframe>
+  <iframe src="http://www.youtube.com/embed/x4g7NjKTjqw" frameborder="0" allowfullscreen="allowfullscreen"> </iframe>
 </div>
 
 
