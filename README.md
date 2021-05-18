@@ -16,7 +16,9 @@ python test.py --canvas_height 30 --canvas_width 30 --diff_level 2
 
 [youtube link to demo](https://youtu.be/x4g7NjKTjqw)
 
-[![](http://img.youtube.com/vi/x4g7NjKTjqw/0.jpg)](http://www.youtube.com/watch?v=x4g7NjKTjqw "")
+<a href="https://youtu.be/x4g7NjKTjqw"><img src="http://img.youtube.com/vi/x4g7NjKTjqw/0.jpg"></a>
+
+
 
 ### Windows
 
