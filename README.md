@@ -16,7 +16,7 @@ python test.py --canvas_height 30 --canvas_width 30 --diff_level 2
 
 [youtube link to demo](https://youtu.be/x4g7NjKTjqw)
 
-<a href="https://youtu.be/x4g7NjKTjqw" target="_blank"><img src="http://img.youtube.com/vi/x4g7NjKTjqw/0.jpg"></a>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/x4g7NjKTjqw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></a>
 
 
 
