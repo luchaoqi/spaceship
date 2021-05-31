@@ -28,5 +28,5 @@ python test.py --canvas_height 30 --canvas_width 30 --diff_level 2
 
 demo
 
-![](https://raw.githubusercontent.com/LuchaoQi/Spaceship/master/demo/demo_win.gif)
+![](https://raw.githubusercontent.com/LuchaoQi/spaceship/master/demo/demo_win.gif)
 
