@@ -30,3 +30,6 @@ demo
 
 ![](https://raw.githubusercontent.com/LuchaoQi/spaceship/master/demo/demo_win.gif)
 
+Some awesome games written in Python:
+
+https://dafluffypotato.itch.io/
